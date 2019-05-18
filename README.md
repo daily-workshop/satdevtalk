@@ -41,6 +41,10 @@
 
 [읽기 좋은 코드가 좋은 코드다](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788979149142&orderClick=LEA&Kc=)
 
+## 예정 인원
+
+8명
+
 ## 예정 스케줄
 
 책의 분량과 참여인들이 느낄 난이도, 일하고 있는 우리에겐 이 모임 자체가 메인이 아니라는 것을 고려. (추후 참여인들과 피드백을 통해 조절 가능)
