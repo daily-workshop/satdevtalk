@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "example": "nodemon"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
+  }
+}
