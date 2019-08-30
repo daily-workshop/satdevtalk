@@ -1,0 +1,14 @@
+on: milestone
+
+jobs:
+  alarm:
+    runs-on: macOS-latest
+    
+    steps:
+    - run: >-
+        curl -X POST ${{ secrets.SLACK_WEBHOOK_URL }}
+        -H 'Content-Type: application/json'
+        -d '{
+          "channel": ${{ secrets.SLACK_CHANNEL }},
+          "text": "다음 일정이 정해졌습니다. 2019년 9월 7일 오전 11시"
+        }'
