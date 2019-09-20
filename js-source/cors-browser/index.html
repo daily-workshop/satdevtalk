@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>CORS</h1>
+
+    <h2>실행법</h2>
+    <p>cors-browser 폴더에서 npx http-server</p>
+    <p>브라우저로 터미널에 출력된 호스트 접속 (예: http://127.0.0.1:8080)</p>
+    <p>개발자 도구에서 콘솔탭을 열어 cors 테스트</p>
+    <p>cors-server.js는 node에서 따로 실행 (주석을 풀어가며 테스트)</p>
+
+    <h2>same origin 과 cross origin</h2>
+    <p>scheme, host, port가 모두 동일해야 same origin (scheme://host:port)</p>
+    <p>
+      same origin이 아닐 때(crosss origin) ajax 호출(XMLHttpRequest, fetch)이
+      발생하면 브라우저는 알아서 CORS 플로우를 진행한다
+    </p>
+    <p>
+      서버는 받은 요청이 CORS에 의해 들어온 요청이면 응답을 통해 해당 요청을
+      허용할지 말지에 대해 브라우저에게 알려준다
+    </p>
+    <p>
+      브라우저는 응답을 받아 서버에서 해당 요청을 허용하면 정상적으로 응답을
+      처리하고, 허용하지 않으면 요청을 실패한 것으로 처리한다
+    </p>
+    <button id="get-test">get test</button>
+    <p>
+      브라우저는 서버 및 리소스에 영향을 미칠 수 있는 요청은 본 요청을 진행하기
+      전 CORS 플로우를 진행시켜주는 preflight 요청을 보내고 응답에 따라 본요청의
+      진행여부를 결정한다
+    </p>
+    <button id="post-test">post test</button>
+    <script>
+      document.getElementById('get-test').addEventListener('click', () => {
+        axios.get('http://localhost:18888').then(res => {
+          console.log(res.data);
+        });
+      });
+
+      document.getElementById('post-test').addEventListener('click', () => {
+        axios.post('http://localhost:18888', {test: 1}).then(res => {
+          console.log(res.data);
+        });
+      });
+    </script>
+  </body>
+</html>
