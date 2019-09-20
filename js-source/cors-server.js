@@ -1,6 +1,6 @@
 const http = require('http');
 
-// get-test 1. cors를 허용하지 않는 서버
+// // get-test 1. cors를 허용하지 않는 서버
 const server = http.createServer((req, res) => {
   res.write('hello');
   res.end();
@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
 //     res.write('hello');
 //     res.end();
 //   } else {
-//     res.statusCode === 404;
+//     res.statusCode = 404;
 //     res.end();
 //   }
 // });
@@ -37,7 +37,7 @@ const server = http.createServer((req, res) => {
 //     res.write('hello');
 //     res.end();
 //   } else {
-//     res.statusCode === 404;
+//     res.statusCode = 404;
 //     res.end();
 //   }
 // });
