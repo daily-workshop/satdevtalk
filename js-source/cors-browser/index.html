@@ -20,7 +20,7 @@
     <p>scheme, host, port가 모두 동일해야 same origin (scheme://host:port)</p>
     <p>
       same origin이 아닐 때(crosss origin) ajax 호출(XMLHttpRequest, fetch)이
-      발생하면 브라우저는 알아서 CORS 플로우를 진행한다
+      발생하면 브라우저는 알아서 CORS 플로우를 진행한다 (꼭 ajax가 아니더라도 외부 리소스를 참조할 때 CORS가 발생할 수 있다)
     </p>
     <p>
       서버는 받은 요청이 CORS에 의해 들어온 요청이면 응답을 통해 해당 요청을
