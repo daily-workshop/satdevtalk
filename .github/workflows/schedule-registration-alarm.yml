@@ -8,7 +8,7 @@ jobs:
     
     steps:
       - run: |
-          echo $GITHUB_EVENT_PATH
+          cat $GITHUB_EVENT_PATH
 #     - run: >-
 #         curl -X POST ${{ secrets.SLACK_WEBHOOK_URL_LARANHEE_TEST }}
 #         -H 'Content-Type: application/json'
