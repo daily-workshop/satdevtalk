@@ -7,9 +7,11 @@ jobs:
     runs-on: macOS-latest
     
     steps:
-    - run: >-
-        curl -X POST ${{ secrets.SLACK_WEBHOOK_URL_LARANHEE_TEST }}
-        -H 'Content-Type: application/json'
-        -d '{
-          "text": "다음 일정이 정해졌습니다. 2019년 9월 7일 오전 11시"
-        }'
+      - run: |
+          echo $GITHUB_EVENT_PATH
+#     - run: >-
+#         curl -X POST ${{ secrets.SLACK_WEBHOOK_URL_LARANHEE_TEST }}
+#         -H 'Content-Type: application/json'
+#         -d '{
+#           "text": "다음 일정이 정해졌습니다. 2019년 9월 7일 오전 11시"
+#         }'
