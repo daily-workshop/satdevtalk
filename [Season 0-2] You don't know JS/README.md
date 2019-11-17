@@ -104,3 +104,42 @@ Object.getOwnPropertyDescriptor(Array, 'prototype');
 // writable: false
 ```
 >  참고 : <https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype>
+
+---
+
+## 3회 20191115
+
+### 공유거리
+
+#### 비트연산
+*10진수 14*
+10의 0승 = 4
+10의 1승 = 10
+10 + 4 = 14
+
+*2진수 4*
+|  2² |  2¹ |  2  |
+|  1  |  0  |  0  |
+`NOT연산을 하게되면`
+| 0 | 1 | 1 |
+
+> 1 : true / 0 : false
+AND : *둘 다 true*면 true
+OR : *둘 중 하나만* true면 true
+XOR : *두 개가 다르면* true
+
+#### parseInt
+parseInt를 css핸들링할 때 사용.
+> css핸들링 관련
+> https://emotion.sh/docs/introduction
+
+`두 번째 인자가 없으면 무조건 10진수로 처리하는데,`
+> https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+> https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/types-grammar/ch4.md#explicitly-parsing-numeric-strings
+> https://github.com/getify/You-Dont-Know-JS/issues/373
+
+#### {} + [] = 0
+> https://stackoverflow.com/questions/11939044/why-does-return-0-in-javascript
+
+#### 어려운 코드와 쉬운 코드
+> https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3
