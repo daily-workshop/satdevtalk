@@ -1,10 +1,10 @@
-# You Don't know JS
+# You Don’t know JS
 
 ## 1회 20191102
 
 ### 공유거리
 
-#### typeof null === 'object'
+#### typeof null === ‘object’
 
 - https://2ality.com/2013/10/typeof-null.html
 - [[번역]](https://github.com/FEDevelopers/tech.description/wiki/%E2%80%9Ctypeof-null%E2%80%9D%EC%9D%98-%EC%97%AD%EC%82%AC)
@@ -71,8 +71,8 @@
 #### Error()
 
 ```javascript
-var a = new Error('2');
-a.message; // '2'
+var a = new Error(‘2’);
+a.message; // ‘2’
 ```
 
 > <https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event>
@@ -108,7 +108,7 @@ function isThisCool(vals = [], fn = () => {}, rx = /(?:)/) {
 프로토타입의 디폴트값은 수정이 불가능하다.
 
 ```javascript
-Object.getOwnPropertyDescriptor(Array, 'prototype');
+Object.getOwnPropertyDescriptor(Array, ‘prototype’);
 // configable: false
 // enumerable: false
 // writable: false
