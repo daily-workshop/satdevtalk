@@ -153,7 +153,7 @@ parseInt를 css핸들링할 때 사용.
 > css핸들링 관련
 > https://emotion.sh/docs/introduction
 
-`두 번째 인자가 없으면 무조건 10진수로 처리하는데,`
+`두 번째 인자가 없으면 무조건 10진수로 리하는데,` 내용수정.
 
 > https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt > https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/types-grammar/ch4.md#explicitly-parsing-numeric-strings > https://github.com/getify/You-Dont-Know-JS/issues/373
 
