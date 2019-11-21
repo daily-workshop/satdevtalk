@@ -21,7 +21,7 @@
   - 당일 나온 공유거리들 정리(지희님)
 - 책을 다 뗀 후, PR로 후기 남겨보자
 
-------
+---
 
 ## 2회 20191109
 
@@ -29,7 +29,7 @@
 
 #### 후미콤마
 
-> *Tip. 후미콤마를 사용했을때 장점*
+> _Tip. 후미콤마를 사용했을때 장점_
 >
 > - diff 가 이뻐진다.
 >
@@ -37,7 +37,7 @@
 > const obj = {
 > a: 1
 > };
-> 
+>
 > const obj = {
 >  + a: 1,
 >  + b: 2
@@ -49,7 +49,7 @@
 > const obj = {
 > a: 1,
 > };
-> 
+>
 > const obj = {
 > a: 1,
 > + b: 2,
@@ -67,18 +67,18 @@
 
 > eval()과 Function()
 >
-> - https://stackoverflow.com/questions/4599857/are-eval-and-new-function-the-same-thing 
+> - https://stackoverflow.com/questions/4599857/are-eval-and-new-function-the-same-thing
 > - https://logical-code.tistory.com/102
 
 #### Error()
 
 ```javascript
-var a = new Error('2');
+var a = new Error("2");
 a.message; // '2'
 ```
 
-> <https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event>
-> [sentry](<https://sentry.io/welcome/>): 에러가 발생하는 정보를 특정 서버에 전송하여 모아 볼수있도록 하는것
+> - <https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event>
+> - sentry](https://sentry.io/welcome/): 에러가 발생하는 정보를 특정 서버에 전송하여 모아 볼수있도록 하는것
 
 #### 네이티브 프로토타입
 
@@ -110,7 +110,7 @@ function isThisCool(vals = [], fn = () => {}, rx = /(?:)/) {
 프로토타입의 디폴트값은 수정이 불가능하다.
 
 ```javascript
-Object.getOwnPropertyDescriptor(Array, 'prototype');
+Object.getOwnPropertyDescriptor(Array, "prototype");
 // configable: false
 // enumerable: false
 // writable: false
@@ -118,7 +118,7 @@ Object.getOwnPropertyDescriptor(Array, 'prototype');
 
 > <https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype>
 
-------
+---
 
 ## 3회 20191115
 
@@ -126,7 +126,7 @@ Object.getOwnPropertyDescriptor(Array, 'prototype');
 
 #### 비트연산
 
-- *10진수 14*
+- _10진수 14_
 
 > 10의 0승 = 4
 >
@@ -134,17 +134,17 @@ Object.getOwnPropertyDescriptor(Array, 'prototype');
 >
 > 10 + 4 = 14
 
-- *2진수 4*
+- _2진수 4_
 
-| 2²   | 2¹   | 2    |
-| ---- | ---- | ---- |
-| 1    | 0    | 0    |
+| 2²  | 2¹  | 2   |
+| --- | --- | --- |
+| 1   | 0   | 0   |
 
 `NOT연산을 하게되면`
 
-| 2²   | 2¹   | 2    |
-| ---- | ---- | ---- |
-| 0    | 1    | 1    |
+| 2²  | 2¹  | 2   |
+| --- | --- | --- |
+| 0   | 1   | 1   |
 
 > 1 : true / 0 : false
 > AND : *둘 다 true*면 true
@@ -160,7 +160,7 @@ parseInt를 css핸들링할 때 사용.
 
 `두 번째 인자가 없으면 무조건 10진수로 리하는데,` 내용수정.
 
-> - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt 
+> - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 > - https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/types-grammar/ch4.md#explicitly-parsing-numeric-strings
 > - https://github.com/getify/You-Dont-Know-JS/issues/373
 
