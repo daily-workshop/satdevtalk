@@ -148,7 +148,7 @@ Object.getOwnPropertyDescriptor(Array, "prototype");
 
 > 1 : true / 0 : false
 > AND : *둘 다 true*면 true
-> OR : _둘 중 하나만_ true면 true
+> OR : _둘 중 하나만_ true여도 true
 > XOR : _두 개가 다르면_ true
 
 #### parseInt
@@ -183,4 +183,3 @@ var fooValue = fooInput?.value;
 ```
 
 > https://github.com/tc39/proposal-optional-chaining
-
