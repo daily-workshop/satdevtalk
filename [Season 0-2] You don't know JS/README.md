@@ -158,7 +158,7 @@ parseInt를 css핸들링할 때 사용.
 > css핸들링 관련
 > https://emotion.sh/docs/introduction
 
-`두 번째 인자가 없으면 무조건 10진수로 리하는데,` 내용수정.
+`두 번째 인자가 없으면 무조건 10진수로 처리하는데,` 내용수정.
 
 > - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 > - https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/types-grammar/ch4.md#explicitly-parsing-numeric-strings
@@ -183,3 +183,50 @@ var fooValue = fooInput?.value;
 ```
 
 > https://github.com/tc39/proposal-optional-chaining
+
+---
+
+## 4회 20191123
+
+### 공유거리
+
+#### 문과 표현식
+
+> https://www.youtube.com/watch?v=WVyCrI1cHi8
+
+#### 부수효과
+
+리턴되는 값(결과 값) 이 외에 다른 값이 변경하는 효과가 있다.
+a++의 결과 값은 현재의 a값 이지만, 이 후에 a에 1을 더해 a의 값을 변경하기 때문에 부수효과라고 한다.
+
+#### 레이블
+
+`https://www.11ty.io/docs/config/#data-deep-merge`가 에러가 아닌 이유 :
+`http:`는 레이블로, `//www.11ty.io/docs/config/#data-deep-merge`는 주석으로 해석한다.
+> https://github.com/GoogleChrome/web.dev/pull/1494
+
+#### _.cond (삼항연산자 중첩)
+
+> https://lodash.com/docs/4.17.15#cond
+
+#### 세미콜론을 사용하지 않는 formatter
+
+> https://standardjs.com/
+
+#### TDZ와 호이스팅
+
+호이스팅이란 코드에 있는 변수 선언을 코드 상에 맨 위로 올리는게 아니라, 컴파일 단계에서 단지 변수를 미리 선언하는 것이다.
+```javascript
+var a = 2;
+var b = a + b + 5;
+b // NaN
+
+let c = a + c + 5;
+// Uncaught ReferenceError
+```
+> https://developer.mozilla.org/ko/docs/Glossary/Hoisting
+
+#### 함수인자
+
+Arrow function에서는 arguments를 사용할 수 없다.
+> https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/%EC%95%A0%EB%A1%9C%EC%9A%B0_%ED%8E%91%EC%85%98
