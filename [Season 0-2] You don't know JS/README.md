@@ -230,3 +230,38 @@ let c = a + c + 5;
 
 Arrow function에서는 arguments를 사용할 수 없다.
 > https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/%EC%95%A0%EB%A1%9C%EC%9A%B0_%ED%8E%91%EC%85%98
+
+---
+
+## 5회 20191130
+
+### 공유거리
+
+#### 컴파일
+
+컴퓨터는 사람이 작성한 코드를 이해하지 못한다.
+사람이 작성한 코드를 기계, 컴퓨터가 이해하기 위해서 바꾸는것.
+
+#### 인터프리터
+
+HTML파일을 브라우저가 읽으면 한줄한줄 읽힐때 마다 실행하여 뿌려준다.
+
+#### 섀도잉 피하기
+![shadowing](https://user-images.githubusercontent.com/25738826/69910680-cf89a680-1452-11ea-8103-c301da082743.png)
+
+window객체로 섀도잉을 피할수 있지만 해당 스코프 내에 window객체가 있을때는 해당 스코프의 window객체를 참조한다.
+개발관련 법칙, 이론, 원칙, 패턴
+>  https://github.com/codeanddonuts/hacker-laws-kr
+
+#### Require, Import 동작원리
+> https://velog.io/@widian/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+
+#### another scope/hoisting oddity
+> https://github.com/getify/You-Dont-Know-JS/issues/199
+
+#### Closure
+![image](https://user-images.githubusercontent.com/25738826/69910752-c64d0980-1453-11ea-9fe1-0217f5462c25.png)
+
+`즉 외부함수가 이미 반환되었어도 외부함수 내의 변수는 이를 필요로 하는 내부함수가 하나 이상 존재하는 경우 계속 유지된다.`
+
+함수내부에서 사용되지 않는 변수에 대해서는 closure에 저장되지 않는다.
