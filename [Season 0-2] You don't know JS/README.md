@@ -239,18 +239,19 @@ Arrow function에서는 arguments를 사용할 수 없다.
 
 #### 컴파일
 
-컴퓨터는 사람이 작성한 코드를 이해하지 못한다.
-사람이 작성한 코드를 기계, 컴퓨터가 이해하기 위해서 바꾸는것.
+컴퓨터는 사람이 작성한 코드를 이해하지 못하기 때문에,
+사람이 작성한 코드를 기계, 컴퓨터가 이해하기 위해서 바꾼다.
 
 #### 인터프리터
 
-HTML파일을 브라우저가 읽으면 한줄한줄 읽힐때 마다 실행하여 뿌려준다.
+코드를 한 줄 읽을때 마다 실행한다.
 
-#### 섀도잉 피하기
+#### Shadowing 피하기
 ![shadowing](https://user-images.githubusercontent.com/25738826/69910680-cf89a680-1452-11ea-8103-c301da082743.png)
 
-window객체로 섀도잉을 피할수 있지만 해당 스코프 내에 window객체가 있을때는 해당 스코프의 window객체를 참조한다.
-개발관련 법칙, 이론, 원칙, 패턴
+window객체로 shadowing을 피할 수 있지만 해당 스코프 내에 window객체가 있을때는 해당 스코프의 window객체를 참조한다.
+
+#### 개발관련 법칙, 이론, 원칙, 패턴
 >  https://github.com/codeanddonuts/hacker-laws-kr
 
 #### Require, Import 동작원리
