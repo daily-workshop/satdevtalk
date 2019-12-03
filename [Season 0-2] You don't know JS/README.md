@@ -158,7 +158,7 @@ parseInt를 css핸들링할 때 사용.
 > css핸들링 관련
 > https://emotion.sh/docs/introduction
 
-`두 번째 인자가 없으면 무조건 10진수로 리하는데,` 내용수정.
+`두 번째 인자가 없으면 무조건 10진수로 처리하는데,` 내용수정.
 
 > - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 > - https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/types-grammar/ch4.md#explicitly-parsing-numeric-strings
@@ -183,3 +183,86 @@ var fooValue = fooInput?.value;
 ```
 
 > https://github.com/tc39/proposal-optional-chaining
+
+---
+
+## 4회 20191123
+
+### 공유거리
+
+#### 문과 표현식
+
+> https://www.youtube.com/watch?v=WVyCrI1cHi8
+
+#### 표현식의 부수효과
+
+표현식이 어떤 결괏값으로 계산되는 과정중에 부수효과(값 변경, 프로퍼티 삭제, 할당 등)가 발생할 수 있다.
+`a++`의 결괏값은 현재의 `a`값 이지만, 계산 이후에 `a`의 값을 `1`증가시키는 부수효과가 발생한다.
+
+#### 레이블
+
+`https://www.11ty.io/docs/config/#data-deep-merge`가 에러가 아닌 이유 :
+`http:`는 레이블로, `//www.11ty.io/docs/config/#data-deep-merge`는 주석으로 해석한다.
+> https://github.com/GoogleChrome/web.dev/pull/1494
+
+#### _.cond (삼항연산자 중첩)
+
+> https://lodash.com/docs/4.17.15#cond
+
+#### 세미콜론을 사용하지 않는 스타일가이드
+
+> https://standardjs.com/
+
+#### TDZ와 호이스팅
+
+호이스팅이란 코드에 있는 변수 선언을 코드상에 맨 위로 올리는 게 아니라, 컴파일 단계에서 단지 변수를 미리 선언하는 것이다.
+```javascript
+var a = 2;
+var b = a + b + 5;
+b // NaN
+
+let c = a + c + 5;
+// Uncaught ReferenceError
+```
+> https://developer.mozilla.org/ko/docs/Glossary/Hoisting
+
+#### 함수인자
+
+Arrow function에서는 arguments를 사용할 수 없다.
+> https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/%EC%95%A0%EB%A1%9C%EC%9A%B0_%ED%8E%91%EC%85%98
+
+---
+
+## 5회 20191130
+
+### 공유거리
+
+#### 컴파일
+
+컴퓨터는 사람이 작성한 코드를 이해하지 못하기 때문에,
+사람이 작성한 코드를 기계, 컴퓨터가 이해하기 위해서 바꾼다.
+
+#### 인터프리터
+
+코드를 한 줄 읽을때 마다 실행한다.
+
+#### Shadowing 피하기
+![shadowing](https://user-images.githubusercontent.com/25738826/69910680-cf89a680-1452-11ea-8103-c301da082743.png)
+
+window객체로 shadowing을 피할 수 있지만 해당 스코프 내에 window객체가 있을때는 해당 스코프의 window객체를 참조한다.
+
+#### 개발관련 법칙, 이론, 원칙, 패턴
+>  https://github.com/codeanddonuts/hacker-laws-kr
+
+#### 웹에서 자바스크립트 모듈 사용하기
+> https://velog.io/@widian/%EC%9B%B9%EC%97%90%EC%84%9C-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+
+#### another scope/hoisting oddity
+> https://github.com/getify/You-Dont-Know-JS/issues/199
+
+#### Closure
+![image](https://user-images.githubusercontent.com/25738826/69910752-c64d0980-1453-11ea-9fe1-0217f5462c25.png)
+
+`즉 외부함수가 이미 반환되었어도 외부함수 내의 변수는 이를 필요로 하는 내부함수가 하나 이상 존재하는 경우 계속 유지된다.`
+
+함수내부에서 사용되지 않는 변수에 대해서는 closure에 저장되지 않는다.
